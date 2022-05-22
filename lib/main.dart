@@ -76,7 +76,9 @@ class _MyHomePageState extends State<MyHomePage> {
               ShowCaseWidget.of(context)?.next();
             },
             child: IconButton(
-              onPressed: () {},
+              onPressed: () {
+                ShowCaseWidget.of(context)?.startShowCase([_key1]);
+              },
               icon: const Icon(Icons.settings),
             ),
           ),
